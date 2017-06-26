@@ -323,12 +323,12 @@
 // how to compile with local HIDAPI, which we now need.
 // For Linux, you need to have HIDAPI (either local or otherwise) for this
 // to work, so this definition is not in by default there.
-#if defined(_WIN32)
-#if !defined(__MINGW__)
-#define VRPN_USE_HID
-#endif
-#endif
-#define VRPN_USE_HID
+//#if defined(_WIN32)
+//#if !defined(__MINGW__)
+//#define VRPN_USE_HID
+//#endif
+//#endif
+//#define VRPN_USE_HID
 
 //------------------------
 // Instructs VRPN to link in the source code to a local version of
@@ -406,7 +406,7 @@
 // (PDI) library to enable opening several of their trackers using
 // this interface (the G4 was the original one this was written
 // for, but new versions are available for the Fastrak and Liberty).
-//#define VRPN_USE_PDI
+#define VRPN_USE_PDI
 
 //------------------------------------------------------------------//
 // SYSTEM CONFIGURATION SECTION                                     //
